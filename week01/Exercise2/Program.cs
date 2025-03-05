@@ -5,90 +5,99 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("Enter your grade percentage: ");
-        string Percentage = Console.ReadLine();
-        int UserPercentage = int.Parse(Percentage);
-        string Letter = "";
-        int PassMark = 70; 
-        
-        int LastNumber = UserPercentage % 10 ;
-        string SignSymbol = "";
-
-        if (UserPercentage >= 90) 
-        {
-            Letter = "A";
+        // string response = "yes";
+        // while (response == "yes")
+        // {
+        //     Console.Write("Enter your grade percentage: ");
+        //     string Percentage = Console.ReadLine();
+        //     int UserPercentage = int.Parse(Percentage);
+        //     string Letter = "";
+        //     int PassMark = 70; 
             
-        }
+        //     int LastNumber = UserPercentage % 10 ;
+        //     string SignSymbol = "";
 
-        else if (UserPercentage >= 80)
-        {
-            Letter = "B";
-        }
-        
-        else if (UserPercentage >= 70)
-        {
-            Letter = "C";
-        }
-        
-        else if (UserPercentage >= 60)
-        {
-            Letter = "D";
-        }
+        //     if (UserPercentage >= 90) 
+        //     {
+        //         Letter = "A";
+                
+        //     }
 
-        else if (UserPercentage < 60)
-        {
-            Letter = "F";
+        //     else if (UserPercentage >= 80)
+        //     {
+        //         Letter = "B";
+        //     }
             
-        }
-
-        else 
-        {
-            Console.WriteLine("Wrong entry, please restart the program.");
-        }
-        
-        
-        //Adding + and - to the code
-        if (LastNumber >= 7)
-        {
-            SignSymbol = "+";
-        }
-        else if (LastNumber < 3)
-        {
-            SignSymbol = "-";
-        }
-        else
-        {
-            SignSymbol = " ";
-        }
-        
-        //Logic to handle A- and A
-        if ((UserPercentage >= 90) && (LastNumber >= 3))
-        {
-            SignSymbol = "";
-        }
-        else if ((UserPercentage >= 90) && (LastNumber < 3))
-        {
-            SignSymbol = "-";
-        }
-
-        else if (UserPercentage < 60)
-        {
-            SignSymbol = "";
+        //     else if (UserPercentage >= 70)
+        //     {
+        //         Letter = "C";
+        //     }
             
-        }
+        //     else if (UserPercentage >= 60)
+        //     {
+        //         Letter = "D";
+        //     }
 
-        Console.WriteLine($"Your grade is {Letter}{SignSymbol}");
-        
-        
-        if (UserPercentage >= PassMark)
-        {
-            Console.WriteLine("Congratulations, you passed the course!");
-        }
-        else
-        {
-            Console.WriteLine("Better luck next time. ");
-        }
-       
+        //     else if (UserPercentage < 60)
+        //     {
+        //         Letter = "F";
+                
+        //     }
 
+        //     else 
+        //     {
+        //         Console.WriteLine("Wrong entry, please restart the program.");
+        //     }
+            
+            
+        //     //Adding + and - to the code
+        //     if (LastNumber >= 7)
+        //     {
+        //         SignSymbol = "+";
+        //     }
+        //     else if (LastNumber < 3)
+        //     {
+        //         SignSymbol = "-";
+        //     }
+        //     else
+        //     {
+        //         SignSymbol = " ";
+        //     }
+            
+        //     //Logic to handle A- and A
+        //     if ((UserPercentage >= 90) && (LastNumber >= 3))
+        //     {
+        //         SignSymbol = "";
+        //     }
+        //     else if ((UserPercentage >= 90) && (LastNumber < 3))
+        //     {
+        //         SignSymbol = "-";
+        //     }
+
+        //     else if (UserPercentage < 60)
+        //     {
+        //         SignSymbol = "";
+                
+        //     }
+
+        //     Console.WriteLine($"Your grade is {Letter}{SignSymbol}");
+            
+            
+        //     if (UserPercentage >= PassMark)
+        //     {
+        //         Console.WriteLine("Congratulations, you passed the course!");
+        //     }
+        //     else
+        //     {
+        //         Console.WriteLine("Better luck next time. ");
+        //     }
+        // Console.Write("Would you like to continue? ");
+        // response = Console.ReadLine();
+        // }
+      for (int i = 0; i <= 10; i+=1)
+      {
+        Console.WriteLine(i);
+      }
+        
     }
 }
