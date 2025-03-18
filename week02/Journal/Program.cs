@@ -1,7 +1,7 @@
-// I exceeded requirements by ensuring that the code catches Exception ex to handle 
-// unexpected errors while reading the file, preventing crashes and displaying an error message. 
-// It also checks if a line has exactly three parts (~|~ separator) and skips invalid entries, ensuring data integrity.
-
+// I exceeded requirements by adding a feature that prompts the user to enter their mood when writing an entry.
+// This mood is then saved along with the journal entry and displayed later when the entries are viewed.
+// This enhances the journal by allowing users to track not just their thoughts but also their emotional state over time.
+using System;
 class Program
 {
     static void Main(string[] args)

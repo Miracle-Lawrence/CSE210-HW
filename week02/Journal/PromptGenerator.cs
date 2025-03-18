@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
-
-public class PromptGenerator  // Now public
+public class PromptGenerator
 {
     public List<string> _prompts = new List<string>();
-
     public Random _random = new Random();
 
     public string GetRandomPrompt()
