@@ -6,7 +6,6 @@ public class Reference
     private int _verse;
     private int  _endVerse;
     
-
     //Constructors
     public Reference(string book, int chapter, int verse)
     {
@@ -15,7 +14,6 @@ public class Reference
         _verse = verse;
         _endVerse = verse;
     }
-
     public Reference(string book, int chapter, int startVerse, int endVerse)
     {
         _book = book;
@@ -32,8 +30,4 @@ public class Reference
         else
             return $"{_book} {_chapter}:{_verse}-{_endVerse}";
     }
-
-
-
-
 }

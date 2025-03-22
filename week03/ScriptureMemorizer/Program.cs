@@ -17,12 +17,11 @@ class Program
             new Scripture(new Reference("Psalm", 23, 1), "The Lord is my shepherd; I shall not want."),
             new Scripture(new Reference("Romans", 8, 28), "And we know that in all things God works for the good of those who love him, who have been called according to his purpose.")
         };
-
         // Randomly select a scripture
         Random random = new Random();
         Scripture scripture = scriptures[random.Next(scriptures.Count)];
 
-         while (true)
+        while (true)
         {
             Console.Clear(); // Clear the console screen
             Console.WriteLine(scripture.GetDisplayText()); // Display the scripture
@@ -42,6 +41,5 @@ class Program
                 break;
             }
         }
-    
     }
 }
