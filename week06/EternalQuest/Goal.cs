@@ -1,4 +1,4 @@
-public class Goal
+public abstract class Goal
 {
     private string _shortName;
     private string _description;
@@ -44,11 +44,8 @@ public class Goal
     }
 
     // Virtual methods for derived classes to override
-    public virtual void RecordEvent()
-    {
-        
-    }
-
+    public abstract void RecordEvent();
+    
     public virtual bool IsComplete()
     {
         return false;
